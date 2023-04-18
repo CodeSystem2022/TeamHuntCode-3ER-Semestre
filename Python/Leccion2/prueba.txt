@@ -1,0 +1,13 @@
+
+Los acentos son importantes 
+ 
+ Programamos con  diferentes tipos de archivos, ahora en TXT. 
+  
+ Ccmo por ejemplo _  acción , ejecución 
+  
+ las letras son : 
+  r read, 
+ w write, 
+  a append , 
+  x devuelve error si no esta el documento buscado 
+ 
