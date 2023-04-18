@@ -17,9 +17,10 @@
 - :computer: Nadia Suárez 
 - :computer: Franco Botto
 - :computer: Juan Viñas
-- :computer: Nicol Peñalver 
+- :computer: Nicol Peñalbe 
 - :computer: Ricardo Modon
 - :computer: Santiago Bergerat
+- :computer: Lopez lucas
 
 ### LENGUAJES:
 
