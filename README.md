@@ -14,7 +14,7 @@
 
 - :computer: Mayra Medina 
 - :computer:  Andres Ramirez
-- :computer: Nadia Suárez 
+- :computer: Daiana Suárez 
 - :computer: Franco Botto
 - :computer: Juan Viñas
 - :computer: Nicol Peñalbe 
