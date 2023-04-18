@@ -1,11 +1,12 @@
-Team Hunt Code
+# Team Hunt Code
 <div align="center">
-<img src="https://media.giphy.com/media/hv5AEBpH3ZyNoRnA7A/giphy.gif" align="center" style="width: 60%" />
+<img src="[https://media.giphy.com/media/hv5AEBpH3ZyNoRnA7A/giphy.gif" align="center" style="width: 60%"](https://codigofuente.io/wp-content/uploads/2018/09/yodaloader.gif) />
 </div>
-<div align="center">
-<img src="https://media.giphy.com/media/3o7bu5Ym9R1RfWcKxG/giphy.gif" align="center" style="width: 40%" />
-</div>
-INTEGRANTES:
+
+
+
+
+# INTEGRANTES:
 <div align="left">
 - :computer: Andres Ramirez 
 - :computer: Daiana
@@ -16,6 +17,8 @@ INTEGRANTES:
 - :computer: Ricardo  Modon 
 - :computer: Santiago  Bergerat 
 </div>
+
+
 <div align="right">
 <img src="https://media.giphy.com/media/8cAhEpkCmyhTy/giphy.gif" align="right" style="width: 40%" />
 </div>
