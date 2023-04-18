@@ -8,7 +8,6 @@
 </div>
 
 
-https://giphy.com/gifs/robert-downey-jr-iron-man-tony-stark-AbYxDs20DECQw
 
 
 ### INTEGRANTES:
