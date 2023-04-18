@@ -29,9 +29,11 @@
 - :globe_with_meridians: JavaScript
 
 
-:computer: Lenguajes
+
 <div align="right">
-<img src="https://media.giphy.com/media/26tP21XCeRwjjtjuU/giphy.gif" align="right" style="width: 40%" />
+  
+ 
+<img src=" https://i.makeagif.com/media/7-13-2016/zxqCEM.gif" align="right" style="width: 40%" />
 </div>
 
 
