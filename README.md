@@ -1,20 +1,34 @@
-# Team Hunt Code
 
 
 
-<Team Hunt Code
-<div style="width:100%;height:0;padding-bottom:41%;position:relative;"><iframe src="https://giphy.com/embed/AbYxDs20DECQw" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/robert-downey-jr-iron-man-tony-stark-AbYxDs20DECQw">via GIPHY</a></p>
-INTEGRANTES:
-<div align="left">
-- :computer: Andres Ramirez 
-- :computer: Daiana
-- :computer: Nicol  Peñalver
-- :computer: Mayra Medina 
-- :computer: Franco   Botto 
-- :computer: Juan   Viñas
-- :computer: Ricardo  Modon 
-- :computer: Santiago  Bergerat 
+# Repositorio HUNT CODE 3er Semestre
+
+<div align="center">
+<img src="https://giphy.com/gifs/robert-downey-jr-iron-man-tony-stark-AbYxDs20DECQw" align="center" style="width: 100%" />
 </div>
+
+
+https://giphy.com/gifs/robert-downey-jr-iron-man-tony-stark-AbYxDs20DECQw
+
+
+### INTEGRANTES:
+
+- :computer: Mayra Medina 
+- :computer:  Andres Ramirez
+- :computer: Nadia Suárez 
+- :computer: Franco Botto
+- :computer: Juan Viñas
+- :computer: Nicol Peñalver 
+- :computer: Ricardo Modon
+- :computer: Santiago Bergerat
+
+### LENGUAJES:
+
+- :coffee: Java
+- :snake: Python
+- :floppy_disk: SQL
+- :globe_with_meridians: JavaScript
+
 
 :computer: Lenguajes
 <div align="right">
