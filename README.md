@@ -14,14 +14,14 @@
 ### INTEGRANTES:
 
 - :computer: Mayra Medina 
-- :computer: Andres Ramirez
+- :computer: Andrés Ramírez
 - :computer: Daiana Suárez 
 - :computer: Franco Botto
 - :computer: Juan Viñas
 - :computer: Nicol Peñalbe 
 - :computer: Ricardo Modon
 - :computer: Santiago Bergerat
-- :computer: Lopez lucas
+- :computer: Lucas Lopéz
 
 ### LENGUAJES:
 
