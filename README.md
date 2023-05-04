@@ -25,10 +25,10 @@
 
 ### LENGUAJES:
 
-- :coffee: Java
+- :coffee:  Java
 - :snake: Python
 - :floppy_disk: SQL
-- :globe_with_meridians: JavaScript
+- :globe_with_meridians:  JavaScript
 
 
 
