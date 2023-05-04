@@ -14,7 +14,7 @@
 ### INTEGRANTES:
 
 - :computer: Mayra Medina 
-- :computer:  Andres Ramirez
+- :computer: Andres Ramirez
 - :computer: Daiana Suárez 
 - :computer: Franco Botto
 - :computer: Juan Viñas
