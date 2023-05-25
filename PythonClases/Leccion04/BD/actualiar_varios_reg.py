@@ -30,15 +30,15 @@ except psycopg2.Error as e:
 try:
     with connection:
         with connection.cursor() as cursor:
-            # cursor = connection.cursor()
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # Placeholder
-            id_persona = input('Digite un numero para el id_persona: ')
-            cursor.execute(sentencia, (id_persona,))
-            registros = cursor.fetchone()
-            print(registros)
+            sentencia = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
+            valores = (
+                ('Juan', 'Perez', 'juanp@mail.com', 4),
+                ('Romina', 'Ayala', 'ayalar@mail.com', 5)) # Es una tupla
+            cursor.executemany(sentencia, valores)
+            registros_actualizados = cursor.rowcount
+            print(f'Los registros actualiados son: {registros_actualizados}')
+
 except Exception as e:
     print(f'Ocurrio un error: {e}')
 finally:
     connection.close()
-
-# psycopg.org/docs/usage.html

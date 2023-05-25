@@ -30,15 +30,14 @@ except psycopg2.Error as e:
 try:
     with connection:
         with connection.cursor() as cursor:
-            # cursor = connection.cursor()
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # Placeholder
-            id_persona = input('Digite un numero para el id_persona: ')
-            cursor.execute(sentencia, (id_persona,))
-            registros = cursor.fetchone()
-            print(registros)
+            sentencia = 'DELETE FROM persona WHERE id_persona IN %s'
+            entrada = input('Digite los numeros de registroa a eleminar (separados por coma): ')
+            valores = (tuple(entrada.split(',')),) # Es una tupla de valores
+            cursor.execute(sentencia, valores)
+            registros_eliminados = cursor.rowcount
+            print(f'Los registros eliminados son: {registros_eliminados}')
+
 except Exception as e:
     print(f'Ocurrio un error: {e}')
 finally:
     connection.close()
-
-# psycopg.org/docs/usage.html

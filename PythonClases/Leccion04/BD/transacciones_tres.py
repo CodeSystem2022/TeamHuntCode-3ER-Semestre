@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg2 as bd
 
 # Establecer los detalles de la conexión
 host = '127.0.0.1'  # Cambia esto según la ubicación de tu servidor PostgreSQL
@@ -9,7 +9,7 @@ password = 'admin'  # Cambia esto por tu contraseña de PostgreSQL
 
 # Conectar a la base de datos
 try:
-    connection = psycopg2.connect(
+    connection = bd.connect(
         host=host,
         port=port,
         database=database,
@@ -20,7 +20,7 @@ try:
 
     # Aquí puedes realizar operaciones con la base de datos
 
-except psycopg2.Error as e:
+except bd.Error as e:
     print("Error al conectar a la base de datos:", e)
 # finally:
     # Cerrar la conexión
@@ -30,15 +30,18 @@ except psycopg2.Error as e:
 try:
     with connection:
         with connection.cursor() as cursor:
-            # cursor = connection.cursor()
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # Placeholder
-            id_persona = input('Digite un numero para el id_persona: ')
-            cursor.execute(sentencia, (id_persona,))
-            registros = cursor.fetchone()
-            print(registros)
+            sentencia = 'INSERT INTO persona(nombre, apellido, email) VALUES (%s, %s, %s)'
+            valores = ('Juan', 'Mendez', 'lcarlos@mail.com')
+            cursor.execute(sentencia, valores)
+
+            sentencia = 'UPDATE persona SET nombre=%s, apellido=%s, email=%s WHERE id_persona=%s'
+            valores = ('Pedro', 'Reyes', 'jcjuarez@mail.com', 2)
+            cursor.execute(sentencia, valores)
+
 except Exception as e:
-    print(f'Ocurrio un error: {e}')
+    print(f'Ocurrio un error, se hizo un rollback: {e}')
 finally:
     connection.close()
 
+print('Termina la transaccion.')
 # psycopg.org/docs/usage.html

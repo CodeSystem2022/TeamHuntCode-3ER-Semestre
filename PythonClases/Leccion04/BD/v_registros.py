@@ -31,14 +31,15 @@ try:
     with connection:
         with connection.cursor() as cursor:
             # cursor = connection.cursor()
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s' # Placeholder
-            id_persona = input('Digite un numero para el id_persona: ')
-            cursor.execute(sentencia, (id_persona,))
-            registros = cursor.fetchone()
-            print(registros)
+            sentencia = 'SELECT * FROM persona WHERE id_persona IN (1, 2)' # Placeholder
+            entrada = input('Digite los id_persona a buscar (separados por coma): ')
+            llaves_primarias = (tuple(entrada.split(', ')),)
+            cursor.execute(sentencia, llaves_primarias)
+            registros = cursor.fetchall()
+            for registro in registros:
+                print(registro)
+
 except Exception as e:
     print(f'Ocurrio un error: {e}')
 finally:
     connection.close()
-
-# psycopg.org/docs/usage.html
