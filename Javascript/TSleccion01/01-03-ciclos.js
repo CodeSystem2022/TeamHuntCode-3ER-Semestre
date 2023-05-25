@@ -1,59 +1,42 @@
-//while 
-
-let contador  = 0;
-
-while (contador < 3) {
-    console.log(contador);
+//while
+let contador = 0;
+while(contador < 3){
+    console.log(contador); 0, 1, 2
     contador++;
 }
+console.log("Fin del ciclo while");  //Fin del ciclo while
 
-console.log("Fin del ciclo while " + contador);
-
-//do while loop
-
+//do while
 let conteo = 0;
-
-do {
-    console.log(conteo);
+do{
+    console.log(conteo); 0, 1, 2
     conteo++;
-} while (conteo < 3);
+}while(conteo < 3)
+console.log("Fin del ciclo do while");  //Fin del ciclo do while
 
-console.log("Fin del ciclo do while  " + contador);
-
-//for 
-
-for (let contadorFor = 0; contadorFor < 3; contadorFor++) {
-    console.log(contadorFor);
+//for
+for(let contando = 0; contando < 3; contando++){
+    console.log(contando); 0, 1, 2
 }
+console.log("Fin del ciclo for");  //Fin del ciclo for
 
-
-//palabra reservada break
-
-for (let contadorFor = 0; contadorFor < 10; contadorFor++) {
-    if (contadorFor % 2==0) {
-        console.log(contadorFor);
+//Palabra reservada break
+for(let contando = 0; contando <= 10; contando++){
+    if(contando % 2 == 0){
+        console.log(contando); //Muestra toos los pares
         break;
-       
     }
 }
+console.log("Termina el ciclo al encontrar el primer numero par.");  //Termina el ciclo
 
-console.log("Termina el ciclo for  de encontrar los pares")
-
-
-//palabra reservada continue y etiqueta labels    
+// La palabra continue y etiquetas labels
 inicio:
-
-for (let contadorFor = 0; contadorFor <= 10; contadorFor++) {
-    if (contadorFor % 2 !==0) {
-       
+for(let contando = 0; contando <= 10; contando++){
+    if(contando % 2 !== 0){
+        console.log(contando); //Muestra toos los pares
         continue inicio;
-       
     }
-    console.log(contadorFor);
+    //console.log(contando);
 }
-
-console.log("Termina el ciclo for  de encontrar los pares")
-
-
-
+console.log("Termina el ciclo al encontrar el primer numero par.");  //Termina el ciclo
 
