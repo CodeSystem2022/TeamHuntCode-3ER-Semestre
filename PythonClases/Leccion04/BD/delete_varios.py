@@ -32,7 +32,7 @@ try:
         with connection.cursor() as cursor:
             sentencia = 'DELETE FROM persona WHERE id_persona IN %s'
             entrada = input('Digite los numeros de registroa a eleminar (separados por coma): ')
-            valores = (tuple(entrada.split(',')),) # Es una tupla de valores
+            valores = (tuple(entrada.split(',')),) # Es una tupla de tuplas
             cursor.execute(sentencia, valores)
             registros_eliminados = cursor.rowcount
             print(f'Los registros eliminados son: {registros_eliminados}')
