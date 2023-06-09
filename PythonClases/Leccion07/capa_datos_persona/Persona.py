@@ -2,8 +2,8 @@ from logger_base import log
 
 
 class Persona:
-    def __init__(self , id_perrsona=None, nombre=None, apellido=None, email=None):
-        self._id_persona = id_perrsona
+    def __init__(self, id_persona=None, nombre=None, apellido=None, email=None):
+        self._id_persona = id_persona
         self._nombre = nombre
         self._apellido = apellido
         self._email = email
@@ -22,7 +22,7 @@ class Persona:
         return self._id_persona
 
     @id_persona.setter
-    def id_persona(self , id_persona):
+    def id_persona(self, id_persona):
         self._id_persona
 
     @property
@@ -30,7 +30,7 @@ class Persona:
         return self._nombre
 
     @nombre.setter
-    def nombre(self , nombre):
+    def nombre(self, nombre):
         self._nombre
 
     @property
@@ -38,7 +38,7 @@ class Persona:
         return self._apellido
 
     @apellido.setter
-    def nombre(self , apellido):
+    def nombre(self, apellido):
         self._apellido
 
     @property
@@ -46,14 +46,15 @@ class Persona:
         return self._email
 
     @email.setter
-    def nombre(self , email):
+    def nombre(self, email):
         self._email
 
-
+'''
 if __name__ == '__main__':
     persona1 = Persona(1, 'Juan', 'Perez', 'jperez@mail.com')
     log.debug(persona1)
     persona2 = Persona(nombre='Jose', apellido='Lepez', email='jlepez@mail.com')
     log.debug(persona2)
-    persona1 = Persona(id_perrsona=1)
+    persona1 = Persona(id_persona=1)
     log.debug(persona1)
+'''
