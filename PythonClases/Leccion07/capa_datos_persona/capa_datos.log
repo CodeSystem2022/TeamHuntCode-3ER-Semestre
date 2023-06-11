@@ -1378,3 +1378,5 @@
             Email: jpena@mail.com
         
 03:42:12 PM:DEBUG [persona_dao.py:71] Personas actualizadas: 1
+04:48:15 PM:DEBUG [conexion.py:25] Conexion Exitosa: <connection object at 0x000000AC24CD3120; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+04:48:15 PM:DEBUG [conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000000AC25523760; closed: 0>

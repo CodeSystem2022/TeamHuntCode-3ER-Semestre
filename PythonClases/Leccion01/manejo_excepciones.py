@@ -1,4 +1,4 @@
-from NumerosIgualesException import NumerosIgualesException
+from NumerosIgualesException import NumerosIgualesExcepetion
 
 resultado = None
 
@@ -8,7 +8,7 @@ try:
     if a == b:
         raise NumerosIgualesException('son numeros iguales')
 
-    resultado = a / b  # Modificamos
+    resultado = a / b #modificamos
 except TypeError as e:
     print(f'TypeError - ocurrió un error: {type(e)}')
 except ZeroDivisionError as e:
@@ -17,7 +17,7 @@ except Exception as e:
     print(f'Exception - ocurrió un error: {type(e)}')
 else:
     print('no arrojo ninguna excepción')
-finally: #Siempre se va a ejecutar
+finally:#Siempre se va a ejecutar
     print('Ejecución de este bloque Finally')
 
 print(f'resultado es: {resultado}')

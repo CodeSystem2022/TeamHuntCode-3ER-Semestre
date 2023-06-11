@@ -31,7 +31,7 @@ try:
     with connection:
         with connection.cursor() as cursor:
             # cursor = connection.cursor()
-            sentencia = 'SELECT * FROM persona WHERE id_persona IN (1, 2)' # Placeholder
+            sentencia = 'SELECT * FROM persona WHERE id_persona IN (1, 2)'  # Placeholder
             entrada = input('Digite los id_persona a buscar (separados por coma): ')
             llaves_primarias = (tuple(entrada.split(', ')),)
             cursor.execute(sentencia, llaves_primarias)

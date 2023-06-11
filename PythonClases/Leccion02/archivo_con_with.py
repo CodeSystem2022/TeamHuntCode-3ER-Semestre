@@ -1,4 +1,4 @@
-from ManejoArchivos import ManejoArchivos  #manejo de contexto with, sintaxis simplificada
+from Leccion2.ManejoArchivos import ManejoArchivos  #manejo de contexto with, sintaxis simplificada
     # with open('prueba.txt', 'r', encoding='utf8') as archivo:
     #    print(archivo.read())
 

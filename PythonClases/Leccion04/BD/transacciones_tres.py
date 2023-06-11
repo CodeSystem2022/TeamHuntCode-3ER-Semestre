@@ -22,11 +22,13 @@ try:
 
 except bd.Error as e:
     print("Error al conectar a la base de datos:", e)
-# finally:
+finally:
     # Cerrar la conexión
-#    if connection:
-#        connection.close()
-#        print("Conexión cerrada")
+    if connection:
+        connection.close()
+        print("Conexión cerrada")
+
+
 try:
     with connection:
         with connection.cursor() as cursor:
