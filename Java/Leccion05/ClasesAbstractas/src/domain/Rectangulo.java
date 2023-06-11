@@ -1,15 +1,18 @@
 package domain;
 
-public class Rectangulo extends FiguraGeometrica {
-
-    //Constructor
-    public Rectangulo(String tipoFigura) {
+public class Rectangulo extends FigurasGeometricas{
+//Consmtructor
+    public Rectangulo(String tipoFigura){
         super(tipoFigura);
+        
     }
 
+   
     @Override
-    public void dibujar() {  //Implementado metodo
-        System.out.println("Se imprime un: " + this.getClass().getSimpleName());
+    public void dibujar(){//implementando el metodo
+        System.out.println("Se imprime un: "+this.getClass().getSimpleName());
     }
-
+    
+   
+    
 }
