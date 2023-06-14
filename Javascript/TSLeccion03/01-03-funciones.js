@@ -1,125 +1,82 @@
+miFuncion(8, 2); //Esto es lo que se conoce como hosting
 
-
-// Hoisting , la posibilidad de llamar la funcion antes o despues de definirla
-
-
-function miFuncion (a,b){ 
-    console.log("Sumamos: " + ( a + b ) );
+function miFuncion(a, b){
+    //console.log("Sumamos: " + (a + b));
+    return a + b;
 }
-// Llamndo la funcion
 
-miFuncion(5,6);
+//Llamando a la funcion
+miFuncion(5, 4);
 
-let resultado = miFuncion(6,5);
-
+let resultado = miFuncion(6, 7);
 console.log(resultado);
 
-
-// Funciones tipo expresion
-
-//Declaramos la funcion de tipo expresion
-
-let x = function (a, b ){  return a + b };
-
-resultado = x(5,6);
-
+//Declaramos una funcion de tipo expresion o anonima
+let x =function(a, b){return a + b};  //Necesita cierre con punto y coma
+resultado = x(5, 6); // Al llamarla se pone la variabl y parentesis
 console.log(resultado);
 
+//Funciones del tipo self y invoking
+(function(a, b){
+    console.log('Ejecutando la funcion: ' + (a + b));
+})(9, 6);
 
-//Funciones que se llaman a si misma, tipo SELF  y incoking   
+console.log(typeof miFuncion);
+function miFuncionDos(a, b){
+    console.log(arguments.length);
+}
 
-(function( a , b){
-    console.log('Ejecutamos el codigo de la funcion ' + (a + b) );
-})(9,6);
-
-
-console.log(miFuncion);
-
-
-
-
-
-
-function miFuncion2 (a, b ){
-    console.log (arguments)
-};
-
-miFuncion2(5,6);
-
-
+miFuncionDos(5, 7, 8, 9);
 
 //toString
-
-
-var miFuncionTexto = miFuncion2.toString();
-
+var miFuncionTexto = miFuncionDos.toString();
 console.log(miFuncionTexto);
 
+//Funciones flecha
+const sumarFuncionFlecha = (a, b) => a + b;
+resultado = sumarFuncionFlecha(3, 7);  //Asignamos el valor a una vatiable
+console.log(resultado);
 
-// Funciones tipo FLECHA
-
-const sumarFuncionFlecha = (a , b) =>  a + b;
-
-
-
-let sumar = function (a =4  , b=8){
-    console.log(arguments[0]); //Muestra el parametro de a 
-    console.log(arguments[1]); //Muestra el parametro de b 
-    console.log(arguments[2])
-    return a +b ;
+let sumar = function(a = 4, b = 8){
+    console.log(arguments[0]);  //Muestra el parametro de: a
+    console.log(arguments[1]);  //Muestra el parametro de: b
+    console.log(arguments[2]);  
+    return a + b + arguments[2];
 }
+resultado = sumar(3, 2, 9);
+console.log(resultado);
 
-resultado1 = sumar(9,5);
-
-console.log (resultado1)
-
-
-resultado = sumarTodo (5,4,13,10,9);
-
-console.log(resultado); 
-
+//Sumar todos los argumentos.
+let respuesta = sumarTodo(5, 4, 13, 10, 9);
+console.log(respuesta);
 function sumarTodo(){
     let suma = 0;
     for (let i = 0; i < arguments.length; i++){
-        suma += arguments[i];
+        suma += arguments[i];  //Arguments es para arreglos
     }
     return suma;
 }
 
-
-//Paso por valor  y referencia
-
-
-//Tipos primitivos 
-
-let z = 10;
-
-function  cambiarValores(a){ //paso por valor 
+//Tipos primitivos
+let k = 10;
+function cambiarValor(a){  //Paso por valor
     a = 20;
 }
 
-cambiarValores(z);
+cambiarValor(k);
+console.log(k);
 
-console.log(z);
-
-
-
-// Pasooooos por referencia , fachaaaa
-
+//Paso por referencia
 const persona = {
-    nombre: "Juan",
-    apellido: "Perez",
-    edad: 20
-};
+    nombre: 'Juan',
+    apelido: 'Lopez'
+}
+console.log(persona);
 
 function cambiarValorObjeto(p1){
-    p1.nombre = 'Rocios';
-    p1.edad = 30;
-    p1.apellido  = 'Bergerat ';
+    p1.nombre = 'Ignacio';
+    p1.apelido = 'Perez';
 }
 
 cambiarValorObjeto(persona);
-
 console.log(persona);
-
-

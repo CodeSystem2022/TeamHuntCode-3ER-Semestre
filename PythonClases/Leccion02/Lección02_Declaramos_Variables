@@ -1,0 +1,13 @@
+#declaramos una variable
+try:
+    archivo = open('prueba.txt', 'w', encoding='utf8') #w que viene write que significa escribir
+    archivo.write('Programamos con diferentes tipos de archivo, ahora en txt.\n')
+    archivo.write('los acentos son importantes para las palabras\n')
+    archivo.write('como por ejemplo ación, ejecución y producción\n')
+    archivo.write('las letras son:\nr read leer, \na append anexa, \n write escribe, \nw+ lee y escribe son igualesr+\n')
+    archivo.write('Con estos terminamos')
+except Exception as e:
+    print(e)
+finally: #siempre se ejecuta
+    archivo.close() #con esto se cierra el archivo
+#archivo.write('Todo quedo perfecto'): este es un error
