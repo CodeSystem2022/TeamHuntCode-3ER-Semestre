@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS trabajo</title>
+</head>
+
+
+<body>
+  
+ 
+    <script type="module">
+        
+        import Producto from "./Producto.mjs";
+        import { Orden } from "./Orden.js";
+
+        
+        const producto1 = new Producto();
+        const producto2 = new Producto();
+        const producto3 = new Producto();
+        const producto4 = new Producto();
+        const producto5 = new Producto();
+        
+        const orden = new Orden(1);
+
+
+        orden.agregarProducto(1, 'Remolacha 1', 15.99);
+        orden.agregarProducto(2, 'Remolacha 2 2', 23.99);
+        orden.agregarProducto(3, 'Remolacha 3 2', 43.99);
+        orden.agregarProducto(4, 'Remolacha 4 2', 7.99);
+        orden.agregarProducto(5, 'Remolacha 5 2', 2.99);
+
+        orden.agregarProducto(6, 'Remolacha 6', 23.00);
+        orden.mostrarOrden();
+    </script>
+</body>
+
+
+</html>
