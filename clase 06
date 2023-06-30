@@ -1,6 +1,7 @@
 from prueba_bd import conexion
 
 try:
+
     with conexion:
         with conexion.cursor() as cursor:
             sentencia = 'INSERT INTO persona (nombre, apellido, email)VALUES (%s, %s, %s)'
