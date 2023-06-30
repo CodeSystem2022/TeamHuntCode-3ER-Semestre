@@ -49,7 +49,7 @@ class Persona:
     def nombre(self, email):
         self._email
 
-'''
+
 if __name__ == '__main__':
     persona1 = Persona(1, 'Juan', 'Perez', 'jperez@mail.com')
     log.debug(persona1)
@@ -57,4 +57,3 @@ if __name__ == '__main__':
     log.debug(persona2)
     persona1 = Persona(id_persona=1)
     log.debug(persona1)
-'''
