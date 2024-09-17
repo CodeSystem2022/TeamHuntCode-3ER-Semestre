@@ -19,7 +19,7 @@
 - :computer: Franco Botto
 - :computer: Juan Viñas
 - :computer: Nicol Peñalbe 
-- :computer: Ricardo Modon
+- :computer: Ricardo Modón
 - :computer: Santiago Bergerat
 - :computer: Lucas Lopéz
 
